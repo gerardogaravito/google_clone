@@ -1,0 +1,161 @@
+$fuente: arial, sans-serif;
+$color_claro: #5f6368;
+$color_primario: #222222;
+$color_muy_claro: #b5bfca;
+$color_buttons: #F2F2F2;
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  color: $color_primario;
+  font-family: $fuente;
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 0px 30px;
+  justify-content: flex-end;
+  &__gmail{
+    align-self: center;
+    margin: auto 12px;
+  }
+  &__images{
+    @extend .header__gmail;
+  }
+  &__menu{
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    margin: auto 12px;
+  }
+  &__user {
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    margin: auto 12px;
+    border-radius: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo{
+    padding: 109px 0px 25px;
+  }
+}
+
+.searchbar {
+  display: flex;
+  width: 36%;
+  border: 1px solid $color_muy_claro;
+  border-radius: 25px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  &__lupa{
+    width: 20px;
+    height: 20px;
+  }
+  &__input{
+    outline: none;
+    border: 0px;
+    width: 90%;
+    color: $color_primario;
+    font-family: $fuente;
+    font-size: 20px;
+    height: 100%;
+    background: transparent;
+  }
+  &__mic{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.extras{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+  font-family: $fuente;
+  color: $color_claro;
+  width: 30%;
+  &__button{
+    height: 35px;
+    padding: 0px 16px;
+    margin: 0px 8px;
+    background-color: $color_buttons;
+    color: $color_claro;
+    border: 1px solid $color_buttons;
+    border-radius: 4px;
+  }
+}
+
+.language {
+  font-family: $fuente;
+  color: $color_primario;
+  font-size: 13px;
+  padding: 0px;
+  &__text{
+    align-self: flex-end;
+  }
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  color: $color_claro;
+  font-size: 15px;
+}
+
+.nationality {
+  display: flex;
+  background-color:$color_buttons;
+  justify-content: flex-start;
+  border: 1px solid $color_muy_claro;
+  height: 40px;
+  &__country{
+    padding: auto 30px;
+    margin: 30px;
+    align-self: center;
+    font-family: $fuente;
+  }
+}
+
+.contact {
+  display: flex;
+  background-color:$color_buttons;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px 1px solid $color_muy_claro;
+  font-family: $fuente;
+  font-size: 14px;
+  padding: 0px 20px;
+  height: 40px;
+  &__left{
+    &--link{
+      color: $color_claro;
+      padding: 0px 10px;
+    }
+  }
+  &__right{
+    &--link {
+      color: $color_claro;
+      padding: 0px 10px;
+    }
+  }
+}

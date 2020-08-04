@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  color: #222222;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 0px 30px;
+  justify-content: flex-end;
+}
+.header__gmail, .header__images {
+  align-self: center;
+  margin: auto 12px;
+}
+.header__menu {
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  margin: auto 12px;
+}
+.header__user {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  margin: auto 12px;
+  border-radius: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__logo {
+  padding: 109px 0px 25px;
+}
+
+.searchbar {
+  display: flex;
+  width: 36%;
+  border: 1px solid #b5bfca;
+  border-radius: 25px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.searchbar__lupa {
+  width: 20px;
+  height: 20px;
+}
+.searchbar__input {
+  outline: none;
+  border: 0px;
+  width: 90%;
+  color: #222222;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  height: 100%;
+  background: transparent;
+}
+.searchbar__mic {
+  width: 20px;
+  height: 20px;
+}
+
+.extras {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+  font-family: arial, sans-serif;
+  color: #5f6368;
+  width: 30%;
+}
+.extras__button {
+  height: 35px;
+  padding: 0px 16px;
+  margin: 0px 8px;
+  background-color: #F2F2F2;
+  color: #5f6368;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+}
+
+.language {
+  font-family: arial, sans-serif;
+  color: #222222;
+  font-size: 13px;
+  padding: 0px;
+}
+.language__text {
+  align-self: flex-end;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  color: #5f6368;
+  font-size: 15px;
+}
+
+.nationality {
+  display: flex;
+  background-color: #F2F2F2;
+  justify-content: flex-start;
+  border: 1px solid #b5bfca;
+  height: 40px;
+}
+.nationality__country {
+  padding: auto 30px;
+  margin: 30px;
+  align-self: center;
+  font-family: arial, sans-serif;
+}
+
+.contact {
+  display: flex;
+  background-color: #F2F2F2;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px 1px solid #b5bfca;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  padding: 0px 20px;
+  height: 40px;
+}
+.contact__left--link {
+  color: #5f6368;
+  padding: 0px 10px;
+}
+.contact__right--link {
+  color: #5f6368;
+  padding: 0px 10px;
+}
